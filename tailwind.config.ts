@@ -16,7 +16,7 @@ module.exports = {
           100: "#ffe4dd",
           200: "#ffc8bb",
           300: "#ffa088",
-          400: "#ff7b5f",
+          400: "#ff7b5f", // Main coral color from image
           500: "#ff5533",
           600: "#ff3311",
           700: "#ff1100",
@@ -30,7 +30,7 @@ module.exports = {
           300: "#e5c4a7",
           400: "#d49b74",
           500: "#c37f52",
-          600: "#8b4513",
+          600: "#8b4513", // Main terra color from image
           700: "#723a0f",
           800: "#5a2e0c",
           900: "#42220a",
@@ -70,7 +70,8 @@ module.exports = {
         },
       },
       fontFamily: {
-        satoshi: ["var(--font-satoshi)"],
+        playfair: ["var(--font-playfair)"],
+        space: ["var(--font-space-mono)"],
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -79,6 +80,6 @@ module.exports = {
       },
     },
   },
-  plugins: [import("tailwindcss-animate")],
+  plugins: [require("tailwindcss-animate")],
 }
 
